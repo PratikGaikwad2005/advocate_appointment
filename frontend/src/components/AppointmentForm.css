@@ -1,0 +1,246 @@
+/* Container and Layout */
+.appointment-form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-form-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Form Styling */
+.appointment-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Sections */
+.form-section {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #f9f9f9;
+}
+
+.form-section legend {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 10px;
+  margin-left: -10px;
+}
+
+/* Form Groups and Inputs */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+  background-color: #f8f9ff;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+  background-color: #fff5f5;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #bbb;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Alert Messages */
+.alert {
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideIn 0.3s ease;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appointment-form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .appointment-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .appointment-form {
+    padding: 20px;
+  }
+
+  .form-section {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form-section legend {
+    font-size: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-form-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .appointment-form-container h2 {
+    font-size: 20px;
+  }
+
+  .appointment-form {
+    padding: 15px;
+  }
+
+  .form-section {
+    padding: 12px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
