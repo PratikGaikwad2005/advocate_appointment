@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Advocate Appointment Form - MERN Stack
 
 A complete **MERN Stack** (MongoDB, Express, React, Node.js) application for managing advocate appointment bookings. Users can fill out a form to book appointments, and all data is automatically saved to a MongoDB Atlas database.
